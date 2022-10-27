@@ -1,19 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace VehicleWorld
 {
+    /// <summary>
+    /// Bus.
+    /// </summary>
     public class Bus : Vehicle
     {
-        public int Capacity { get; set; }
-        public Bus(int capacity, string name, int maxSpeed, int milage) : base(name, maxSpeed, milage)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Bus"/> class..
+        /// </summary>
+        /// <param name="capacity">Bus capacity.</param>
+        /// <param name="name">Bus name.</param>
+        /// <param name="maxSpeed">Bus max speed.</param>
+        /// <param name="mileage">Bus mileage.</param>
+        public Bus(int capacity, string name, int maxSpeed, int mileage)
+            : base(name, maxSpeed, mileage)
         {
-            Capacity = capacity;
+            this.Capacity = capacity;
         }
+
+        /// <summary>
+        /// Gets the seat capacity.
+        /// </summary>
+        public int Capacity { get; private set; }
+
+        /// <summary>
+        /// Bus information.
+        /// </summary>
         public override void GetVehicleInformation()
         {
-            Console.WriteLine($"Name:{this.Name}, MaxSpeed:{this.MaxSpeed}, Milage:{this.Milage}, Capacity: {this.Capacity}");
+            Console.WriteLine($"Name: {this.Name}, MaxSpeed: {this.MaxSpeed}, Mileage: {this.Mileage}, Capacity: {this.Capacity}");
         }
     }
 }

@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace VehicleWorld
+﻿namespace VehicleWorld
 {
+    /// <summary>
+    /// Bicycle.
+    /// </summary>
     public class Bicycle : Vehicle
     {
-        public Bicycle(string name, int maxSpeed, int milage) : base(name, maxSpeed, milage)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Bicycle"/> class..
+        /// </summary>
+        /// <param name="name">Bicycle's name.</param>
+        /// <param name="maxSpeed">Bicycle's max speed.</param>
+        /// <param name="mileage">Bicycle's mileage.</param>
+        public Bicycle(string name, int maxSpeed, int mileage)
+            : base(name, maxSpeed, mileage)
         {
         }
     }

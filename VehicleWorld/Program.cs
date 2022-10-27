@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace VehicleWorld
+﻿namespace VehicleWorld
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -17,7 +13,6 @@ namespace VehicleWorld
             bus.GetVehicleInformation();
             bicycle.GetVehicleInformation();
             car.GetVehicleInformation();
-
         }
     }
 }

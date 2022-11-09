@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace VehicleWorld
 {
+    /// <summary>
+    /// Bus.
+    /// </summary>
     public class Bus : Vehicle
     {
         public int Capacity { get; set; }
@@ -13,7 +14,7 @@ namespace VehicleWorld
         }
         public override void GetVehicleInformation()
         {
-            Console.WriteLine($"Name:{this.Name}, MaxSpeed:{this.MaxSpeed}, Milage:{this.Milage}, Capacity: {this.Capacity}");
+            Console.WriteLine($"Name: {this.Name}, MaxSpeed: {this.MaxSpeed}, Mileage: {this.Mileage}, Capacity: {this.Capacity}");
         }
     }
 }

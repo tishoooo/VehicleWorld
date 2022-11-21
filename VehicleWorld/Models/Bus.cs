@@ -14,7 +14,7 @@ namespace VehicleWorld
         }
         public override void GetVehicleInformation()
         {
-            Console.WriteLine($"Name: {this.Name}, MaxSpeed: {this.MaxSpeed}, Mileage: {this.Mileage}, Capacity: {this.Capacity}");
+            Console.WriteLine($"Name: {this.Name}, MaxSpeed: {this.MaxSpeed}, Mileage: {this.Mileage}, Capacity: {this.Capacity}, Origin: {this.Origin}");
         }
     }
 }

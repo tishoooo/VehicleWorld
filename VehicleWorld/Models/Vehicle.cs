@@ -1,6 +1,4 @@
-﻿namespace VehicleWorld
-{
-    using System;
+﻿using System;
 
 namespace VehicleWorld
 {
@@ -9,15 +7,11 @@ namespace VehicleWorld
     /// </summary>
     public class Vehicle
     {
-        public string Name { get; set; }
-        public int MaxSpeed { get; set; }
-        public int Milage { get; set; }
-        public Vehicle() { }
-        public Vehicle(string name, int maxSpeed, int milage)
+        public Vehicle(string name, int maxSpeed, int mileage)
         {
             this.Name = name;
             this.MaxSpeed = maxSpeed;
-            this.Milage = milage;
+            this.Mileage = mileage;
         }
 
         /// <summary>
@@ -35,12 +29,23 @@ namespace VehicleWorld
         /// </summary>
         public int Mileage { get; private set; }
 
+        public string Origin { get; private set; } = "Made in Bulgaria";
+
         /// <summary>
         /// Displays Vehicle information.
         /// </summary>
         public virtual void GetVehicleInformation()
         {
-            Console.WriteLine($"Name: {this.Name}, MaxSpeed: {this.MaxSpeed}, Mileage: {this.Mileage}");
+            Console.WriteLine($"Name: {this.Name}, MaxSpeed: {this.MaxSpeed}, Mileage: {this.Mileage}, Origin: {this.Origin}");
+        }
+
+          /// <summary>
+        /// Displays distance information.
+        /// </summary>
+        /// <param name="distance">Information for distance in mileage.</param>
+        public void Drive(int distance)
+        {
+            this.Mileage += distance;
         }
     }
 }

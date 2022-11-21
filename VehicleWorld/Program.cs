@@ -21,6 +21,10 @@ namespace VehicleWorld
             bus.GetVehicleInformation();
             bicycle.GetVehicleInformation();
             car.GetVehicleInformation();
+
+            var carFactory = CarFactory.Build("Audi", 330, 360);
+            carFactory.GetVehicleInformation();
+
         }
     }
 }

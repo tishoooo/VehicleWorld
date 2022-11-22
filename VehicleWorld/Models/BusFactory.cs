@@ -12,10 +12,11 @@
         /// <param name="maxSpeed">Bus max speed.</param>
         /// <param name="mileage">Bus mileage.</param>
         /// <param name="capacity">Bus capacity.</param>
+        /// <param name="engine">Engine.</param>
         /// <returns>new Bus.</returns>
-        public static Bus Build(string name, int maxSpeed, int mileage, int capacity)
+        public static Bus Build(string name, int maxSpeed, int mileage, int capacity, Engine engine)
         {
-            Bus bus = new Bus(capacity, name, maxSpeed, mileage);
+            Bus bus = new Bus(capacity, name, maxSpeed, mileage, engine);
             return bus;
         }
     }

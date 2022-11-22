@@ -12,9 +12,9 @@
         /// <param name="maxSpeed">Vehicle's max speed.</param>
         /// <param name="mileage">Vehicle's mileage.</param>
         /// <returns>New car.</returns>
-        public static Car Build(string name, int maxSpeed, int mileage)
+        public static Car Build(string name, int maxSpeed, int mileage, Engine engine)
         {
-            Car car = new Car(name, maxSpeed, mileage);
+            Car car = new Car(name, maxSpeed, mileage, engine);
             return car;
         }
     }

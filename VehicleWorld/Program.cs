@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using VehicleWorld.Models;
 
 namespace VehicleWorld
 {
@@ -22,9 +23,14 @@ namespace VehicleWorld
             bicycle.GetVehicleInformation();
             car.GetVehicleInformation();
 
-            var carFactory = CarFactory.Build("Audi", 330, 360);
+            var carFactory = CarFactory.Build("Audi produced by CarFactory", 330, 360);
             carFactory.GetVehicleInformation();
 
+            var busFactory = BusFactory.Build("Bus produced by BusFactory", 160, 210, 80);
+            busFactory.GetVehicleInformation();
+
+            var bicycleFactory = BicycleFactory.Build("Bicycle produced by BicycleFactory", 20, 16);
+            bicycleFactory.GetVehicleInformation();
         }
     }
 }

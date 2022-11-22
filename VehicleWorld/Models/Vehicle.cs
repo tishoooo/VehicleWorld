@@ -29,6 +29,9 @@ namespace VehicleWorld
         /// </summary>
         public int Mileage { get; private set; }
 
+        /// <summary>
+        /// Gets Origin property.
+        /// </summary>
         public string Origin { get; private set; } = "Made in Bulgaria";
 
         /// <summary>
@@ -39,7 +42,7 @@ namespace VehicleWorld
             Console.WriteLine($"Name: {this.Name}, MaxSpeed: {this.MaxSpeed}, Mileage: {this.Mileage}, Origin: {this.Origin}");
         }
 
-          /// <summary>
+        /// <summary>
         /// Displays distance information.
         /// </summary>
         /// <param name="distance">Information for distance in mileage.</param>
